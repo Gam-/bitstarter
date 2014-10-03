@@ -97,6 +97,11 @@
       .footer a {
         color: #ccccff;
       }
+	 /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+	 div.addthis_toolbox {
+ 	 width:180px;
+ 	 margin: 0 auto;
+ 	}
     </style>
   </head>
   <body>
@@ -192,16 +197,13 @@
           </div>
           <div class="row-fluid">
           <div class="span8 offset2 social">
-            <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+        	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_sharing_toolbox"></div>
           </div>
           </div>
         </div>
         </div>
       </div>
-
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
